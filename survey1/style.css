@@ -1,0 +1,49 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Abel';
+}
+
+body{
+  background-color: rgb(247, 148, 145);
+}
+
+#title{
+  margin-top: 30px;
+  text-align: center;
+}
+#title p{
+  padding: 3px 0px;
+}
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  margin: 5vh 15vh;
+  padding: 40px;
+  background-color: lightblue;
+  border-radius: 5px;
+}
+#radio-div{
+  margin: 15px 0px 0px 0px;
+}
+#checkbox-div{
+  margin-top: 15px;
+}
+#submit {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 16px;
+  margin: 25px 2px 0px 2px;
+  cursor: pointer;
+}
+
+label{
+  margin: 15px 0px 5px 0px;
+}

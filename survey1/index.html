@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <div id="title">
+      <p>Weight Training Survey</p>
+      <p id="description">Short Survey about Weight training!</p>
+      <p id="thank-you">Thank you for taking the time to fill in this survey</p>
+    </div>
+    <div id="survey-body">
+      <form action="submit" id="survey-form" class="flex-container">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" required placeholder="Enter your name here">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" required placeholder="Enter your Email here">
+        <label for="number" id="number-label">Age<span> (optional) </span></label>
+        <input type="number" placeholder="Enter your age here" min="10" max="90"> 
+        <label for="training-time" id="time-label">Weight Training Experience</label>
+        <select id="dropdown">
+          <option value="default" selected>-</option>
+          <option value="0-3">0-3 Months</option>
+          <option value="3-6">3-6 Months</option>
+          <option value="6-12">6-12 Months</option>
+          <option value="1-2y">1-2 Years</option>
+          <option value="more2">More than 2 Years</option>
+        </select>
+        <div id="radio-div">
+          <label for="program" id="program">What program are you currently following ?</label>
+          <br>
+          <input type="radio" name="program" value="ppl">
+          <label for="ppl">Push/Pull/Legs</label>
+          <br>
+          <input type="radio" name="program" value="full-body">
+          <label for="fullbody">Full Body</label>
+          <br>
+          <input type="radio" name="program" value="brosplit">
+          <label for="brosplit">Bro Split</label>
+          <br>
+          <input type="radio" name="program" value="other">
+          <label for="other">Other</label>
+        </div>
+        <div id="checkbox-div">
+          <label for="motivation" id="motivation">What keeps you motivaited to train ?</label>
+          <br>
+          <input type="checkbox" name="motivation" value="Girls">
+          <label for="motivation">Girls</label>
+          <br>
+          <input type="checkbox" name="motivation" value="Girls">
+          <label for="motivation">Girls</label>
+          <br>
+          <input type="checkbox" name="motivation" value="Girls">
+          <label for="motivation">Girls</label>
+          <br>
+          <input type="checkbox" name="motivation" value="Girls">
+          <label for="motivation">Girls</label>
+        </div>
+        <label for="additional-comment">Enter additional comments</label>
+        <textarea>
+
+        </textarea>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  
+  </body>
+
+</html>
