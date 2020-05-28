@@ -9,34 +9,34 @@
 a{
   text-decoration: none;
   color: gray;
-  border-bottom: 1px black solid;
+
 }
 header{
-  border-bottom: 2px solid black;
   margin-bottom: 25px;
 }
 #nav {
+
   display: flex;
   flex-direction: column;
   align-items: center;
-
   height: 35vh;
 }
 nav ul{
+  border: 2px solid black;
   color: rgb(92, 92, 92);
   overflow-y: scroll;
   width: 100%;
   font-size: 18px;
-  border-top: 1px solid black;
+
 }
 nav li{
   padding: 12px 40px;
-  
+  border-bottom: 1px solid black;
 }
-
-nav li:last-child{
+#rfr{
   border: none;
 }
+
 nav h2 {
   margin: 24px 0px;
 }
@@ -51,6 +51,9 @@ nav h2 {
 }
 #article-body ul {
   margin: 5px 55px 15px 55px;
+}
+#article-body li {
+  margin-top: 10px;
 }
 #article-body p{
   margin: 20px 0px;
@@ -78,25 +81,35 @@ nav h2 {
   margin-top: 20px;
 }
 @media (min-width:800px) {
-  #navbar{
-    border: 1px solid blue;
-    
-  }
-  nav{
-    display: block;
-    border: 2px dashed red;
-    height: 100%;
+  body {
+    display: flex;
   }
   header{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    border: 3px dashed green;
-    justify-content: space-between;
-    
+    flex: 1;
+    margin: 0;
+    height: 100vh;
+    border-right: 2px solid gray;
+    position: fixed;
   }
-  body{
-    display: flex;
-    
+  #article-body{
+    flex: 2;
+    margin-left: 33%;
   }
+  nav ul {
+    overflow: visible;
+    border: none;
+  }
+  #intrdc{
+    border-top: 1px solid black;
+  }
+  #rfr{
+    border-bottom: 1px solid black;
+  }
+  nav{
+
+  }
+  nav li{
+
+  }
+
 }
