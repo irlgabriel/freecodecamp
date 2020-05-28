@@ -1,0 +1,1 @@
+I need to add a media query to move navbar on the left side on screens wider than 800px.
